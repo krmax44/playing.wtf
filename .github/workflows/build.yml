@@ -1,9 +1,12 @@
 name: build
 
 on:
-  - push
-    - '!gh_pages'
-  - pull_request
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   test:
