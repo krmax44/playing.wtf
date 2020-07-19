@@ -1,6 +1,9 @@
 name: build
 
-on: [push, pull_request]
+on:
+  - push
+    - '!gh_pages'
+  - pull_request
 
 jobs:
   test:
